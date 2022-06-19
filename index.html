@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Exam Manager</title>
+	<link rel="stylesheet" href="styles.css"> </head>
+
+<body>
+	<script src="script.js"></script>
+	<div style="text-align: center;font-weight: 700;margin-bottom: 2rem;font-size: x-large;border-bottom: 2px dotted;">EXAM MANAGER</div>
+	<div style="display: flex;">
+		<table>
+			<thead>
+				<th scope="col"> EXAM </th>
+				<th scope="col"> VIEW EXAM </th>
+				<th scope="col"> DIFFICULTY LEVEL </th>
+				<th scope="col"> DUE DATE</th>
+				<th scope="col"> STATUS</th>
+				<th scope="col"> AVERAGE TEST TIME </th>
+				<th scope="col"> EXAM CONTROLS </th>
+			</thead>
+			<tbody>
+				<tr onclick="toggle('webdevchildren')" class="parent-row">
+					<th scope="row">Web Development</th>
+					<th></th>
+					<th></th>
+					<th></th>
+					<th></th>
+					<th></th>
+					<th></th>
+				</tr>
+				<tbody id="webdevchildren" style="display: none;"></tbody>
+				<tr onclick="toggle('datatechchildren')" class="parent-row">
+					<th scope="row">Data Technologies</th>
+					<th></th>
+					<th></th>
+					<th></th>
+					<th></th>
+					<th></th>
+					<th></th>
+				</tr>
+				<tbody id="datatechchildren" style="display: none;"></tbody>
+				<tr onclick="toggle('mobiletechchildren')" class="parent-row">
+					<th scope="row">Mobile Technologies</th>
+					<th></th>
+					<th></th>
+					<th></th>
+					<th></th>
+					<th></th>
+					<th></th>
+				</tr>
+				<tbody id="mobiletechchildren" style="display: none;"></tbody>
+			</tbody>
+		</table>
+		<div id="editform" style="display: none;background-color: black;color: wheat;"></div>
+		<div id="deleteModal" class="modal"></div>
+	</div>
+</body>
+
+</html>
